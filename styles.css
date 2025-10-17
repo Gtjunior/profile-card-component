@@ -1,0 +1,122 @@
+.html {
+    font-size: 18px;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -25% left -25%, bottom -25% right -25%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 55% auto;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.profile {
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header {
+    flex: 1 1 150px;
+    background-image: url(./images/bg-pattern-card.svg);
+    position: relative;
+}
+
+.profile-body {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.profile-img {
+    border-radius: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    border: 5px solid white;
+    transform: translateX(-50%);
+    max-width: 100%;
+}
+
+.profile-info {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.profile-info span {
+    margin: 0.2rem;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-age {
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-location {
+    grid-column: span 2;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.profile-age, .profile-location {
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+    border-top: 1px solid hsl(225, 10%, 92%);
+}
+
+.profile-stat {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat {
+    font-weight: bold;
+}
+
+.stat-name {
+    color: hsl(227, 10%, 46%);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
