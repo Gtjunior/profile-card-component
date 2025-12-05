@@ -1,12 +1,17 @@
-.html {
-    font-size: 18px;
+:root {
+    --link-color:hsl(228, 45%, 44%);
+}
+
+html {
+    font-size: clamp(14px, 2vw, 18px);
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 0.6rem;
+    text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--link-color);
 }
 
 * {
